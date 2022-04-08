@@ -25,10 +25,6 @@ namespace DrawFigury
             comboBox1.Items.Clear();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -71,6 +67,19 @@ namespace DrawFigury
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form2 form = new Form2();
+            form.Hide();
+            form.Show();
 
         }
     }
