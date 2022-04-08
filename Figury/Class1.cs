@@ -20,7 +20,8 @@ namespace Figury
         public int y;
         public int w;
         public int h;
-        public PictureBox pictureBox;
+        public string name;
+        public static PictureBox pictureBox;
         abstract public void Draw();
         /// <summary>
         /// Метод перемещения фигуры

@@ -9,6 +9,14 @@ namespace Figury
 {
     public class Ellipse : Figure
     {
+        public Ellipse(int x, int y, int w, int h, string name)
+        {
+            this.x = x;
+            this.y = y;
+            this.w = w;
+            this.h = h;
+            this.name = name;
+        }
         public Ellipse(int x, int y, int w, int h)
         {
             this.x = x;
@@ -22,6 +30,7 @@ namespace Figury
             this.y = 0;
             this.w = 0;
             this.h = 0;
+            this.name = "Figure";
         }
         public override void Draw()
         {

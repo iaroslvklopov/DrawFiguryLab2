@@ -11,6 +11,7 @@ namespace DrawFigury
         public char symbolOperator;
         public EmptyOperatorMethod operatorMethod = null;
         public BinaryOperatorMethod binaryOperator = null;
+        public BinaryOperatorMethod1 binaryOperator1 = null;
         public TrinaryOperatorMethod trinaryOperator = null;
         public Operator(EmptyOperatorMethod operatorMethod, char symbolOperator)
         {
@@ -20,6 +21,11 @@ namespace DrawFigury
         public Operator(BinaryOperatorMethod binaryOperator, char symbolOperator)
         {
             this.binaryOperator = binaryOperator;
+            this.symbolOperator = symbolOperator;
+        }
+        public Operator(BinaryOperatorMethod1 binaryOperator1, char symbolOperator)
+        {
+            this.binaryOperator1 = binaryOperator1;
             this.symbolOperator = symbolOperator;
         }
         public Operator(TrinaryOperatorMethod trinaryOperator, char symbolOperator)

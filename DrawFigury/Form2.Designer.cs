@@ -62,6 +62,7 @@
             this.textBoxInputString.Name = "textBoxInputString";
             this.textBoxInputString.Size = new System.Drawing.Size(254, 27);
             this.textBoxInputString.TabIndex = 2;
+            this.textBoxInputString.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxInputString_KeyDown);
             // 
             // comboBox1
             // 

@@ -17,5 +17,16 @@ namespace Figury
         {
             figures.Add(figure);
         }
+        public static Figure FindFigure(string name)
+        {
+            foreach (Figure figure in figures)
+            {
+                if (figure.name == name)
+                {
+                    return figure;
+                }
+            }
+            return null;
+        }
     }
 }
